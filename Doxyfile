@@ -1,0 +1,55 @@
+# Doxygen project related configuration options
+
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "Mute"
+PROJECT_BRIEF          = "Multi user thingy"
+OUTPUT_DIRECTORY       = "build"
+ALLOW_UNICODE_NAMES    = YES
+OUTPUT_LANGUAGE        = English
+BUILTIN_STL_SUPPORT    = YES
+
+
+# warning and progress messages
+
+QUIET                  = YES
+
+
+# input files
+
+INPUT                  = src/
+RECURSIVE              = YES
+
+
+# source browsing
+
+SOURCE_BROWSER         = YES
+STRIP_CODE_COMMENTS    = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+
+# HTML output
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = "../docs/html"
+HTML_DYNAMIC_SECTIONS  = YES
+DISABLE_INDEX          = YES
+GENERATE_TREEVIEW      = YES
+ENUM_VALUES_PER_LINE   = 1
+
+
+# Other outputs
+
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+GENERATE_DOCBOOK       = NO
+GENERATE_AUTOGEN_DEF   = NO
+GENERATE_PERLMOD       = NO
+
+
+# dot tool
+
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
