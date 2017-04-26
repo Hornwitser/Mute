@@ -7,8 +7,10 @@ BINARIES = bin/client.exe bin/server.exe
 DOCS = docs/html
 
 SOURCES = $(foreach dir,$(SOURCE_DIRS),$(wildcard $(dir)/*.cpp))
+HEADERS = $(foreach dir,$(SOURCE_DIRS),$(wildcard $(dir)/*.hpp))
 OBJECTS = $(patsubst src/%.cpp,build/%.o,$(SOURCES))
 BUILD_DIRS = $(patsubst src%,build%,$(SOURCE_DIRS))
+DOC_SOURCES = $(SOURCES) $(HEADERS)
 
 
 .PHONY: all clean
