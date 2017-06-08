@@ -1,6 +1,7 @@
 CPPFLAGS = -iquotesrc/
 CXXFLAGS = -std=c++14 -pedantic -Wall -Wextra
 LDFLAGS = -g
+LDLIBS = -lsfml-network -lsfml-system
 
 SOURCE_DIRS = src src/client src/server
 BINARIES = bin/client.exe bin/server.exe
